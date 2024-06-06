@@ -1,4 +1,4 @@
-# NginX with Let’s Encrypt and FastAPI on docker-compose
+# nginx with Let’s Encrypt and FastAPI on docker-compose
 
 `init-letsencrypt.sh` fetches and ensures the renewal of a Let’s
 Encrypt certificate for one or multiple domains in a docker-compose
@@ -24,5 +24,6 @@ application.
         docker-compose up
 
 ## Recognition
-This repository is based on the [nginx-certbot] repository (https://github.com/wmnnd/nginx-certbot).
+This repository is based on the repository [nginx-certbot](https://github.com/wmnnd/nginx-certbot).
+
 Only the content was extended to include a fastAPI server to act as a reverse proxy and nginx could redirect users through `port 8000`.
